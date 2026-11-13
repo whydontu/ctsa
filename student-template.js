@@ -11,16 +11,15 @@
 // getPerimeter() возвращает периметр.
 class Rectangle {
   constructor(width, height) {
-    this.width = width;
-    this.height = height;
+    // TODO
   }
 
   getArea() {
-    return this.width * this.height;
+    // TODO
   }
 
   getPerimeter() {
-    return 2 * (this.width + this.height);
+    // TODO
   }
 }
 
@@ -31,20 +30,15 @@ class Rectangle {
 // и в любом случае возвращает текущее quantity.
 class Product {
   constructor(name, price, quantity) {
-    this.name = name;
-    this.price = price;
-    this.quantity = quantity;
+    // TODO
   }
 
   getTotal() {
-    return this.price * this.quantity;
+    // TODO
   }
 
   add(amount) {
-    if (amount > 0) {
-      this.quantity += amount;
-    }
-    return this.quantity;
+    // TODO
   }
 }
 
@@ -54,21 +48,15 @@ class Product {
 // addGrade(grade) добавляет оценку в массив и возвращает новую длину массива.
 class Student {
   constructor(name, grades) {
-    this.name = name;
-    this.grades = grades;
+    // TODO
   }
 
   getAverage() {
-    if (this.grades.length === 0) {
-      return 0;
-    }
-    const sum = this.grades.reduce((acc, grade) => acc + grade, 0);
-    return sum / this.grades.length;
+    // TODO
   }
 
   addGrade(grade) {
-    this.grades.push(grade);
-    return this.grades.length;
+    // TODO
   }
 }
 
@@ -79,22 +67,15 @@ class Student {
 // вернуть текущий balance независимо от того, удалось списание или нет.
 class BankAccount {
   constructor(owner, balance = 0) {
-    this.owner = owner;
-    this.balance = balance;
+    // TODO
   }
 
   deposit(amount) {
-    if (amount > 0) {
-      this.balance += amount;
-    }
-    return this.balance;
+    // TODO
   }
 
   withdraw(amount) {
-    if (amount > 0 && amount <= this.balance) {
-      this.balance -= amount;
-    }
-    return this.balance;
+    // TODO
   }
 }
 
@@ -105,23 +86,21 @@ class BankAccount {
 // и вернуть "Имя, возраст, группа GROUP".
 class Person {
   constructor(name, age) {
-    this.name = name;
-    this.age = age;
+    // TODO
   }
 
   getInfo() {
-    return `${this.name}, ${this.age}`;
+    // TODO
   }
 }
 
 class StudentProfile extends Person {
   constructor(name, age, group) {
-    super(name, age);
-    this.group = group;
+    // TODO
   }
 
   getInfo() {
-    return `${super.getInfo()}, группа ${this.group}`;
+    // TODO
   }
 }
 
@@ -130,15 +109,11 @@ class StudentProfile extends Person {
 // Свойства name и age должны быть собственными свойствами экземпляра.
 // Метод getInfo() добавьте в LegacyUser.prototype.
 function LegacyUser(name, age) {
-  this.name = name;
-  this.age = age;
-  this.getInfo = function () {
-    return `${this.name}, ${this.age}`;
-  };
+  // TODO
 }
 
 LegacyUser.prototype.getInfo = function () {
-  return `${this.name}, ${this.age}`;
+  // TODO
 };
 
 module.exports = {
